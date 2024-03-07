@@ -1,0 +1,129 @@
+.hero-style .container {
+    text-align: right;
+}
+.hero-style .slide-title,
+.hero-style .slide-text,
+.hero-style .slide-btns {
+    width: 100%;
+    float: right;
+}
+.hero-style .slide-btns > a:first-child {
+    margin-right: unset !important;
+    margin-left: 10px;
+}
+.callto-action ul {
+    display: flex !important;
+}
+.callto-action ul .single-box {
+    direction: rtl;
+}
+.float-right {
+    float: right;
+}
+.btn-two span:before {
+    padding-left: 9px;
+}
+.single-solution-style1 .text-holder {
+    padding-right: 70px;
+    padding-left: 0px !important;
+}
+.single-solution-style1 .text-holder .icon {
+    left: unset !important;
+    right: 0;
+}
+.single-solution-style1 .text-holder .text {
+    padding-left: 0 !important;
+    padding-right: 20px;
+}
+.single-solution-style1 .text-holder .text:before {
+    left: unset !important;
+    right: 0;
+}
+.d-rtl {
+    direction: rtl;
+}
+.map-quote-area .inner-content {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+.contact-box {
+    text-align: right;
+    padding-right: 60px !important;
+}
+.quote .title {
+    text-align: end;
+}
+.quote-form input {
+    text-align: end;
+}
+.blog-card .statics-content {
+    text-align: end;
+}
+.blog-card .text-holder .text {
+    padding-right: 15px;
+    padding-left: unset !important;
+}
+.blog-card .text-holder .text:before {
+    left: unset !important;
+    right: 0;
+    width: 2px !important;
+}
+.blog-card .readmore:hover {
+    padding-right: 20px;
+}
+.blog-card .readmore a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+.blog-card .readmore a span {
+    line-height: 1px;
+}
+
+.blog-card .readmore a .icon-arrow {
+    transform: rotateZ(180deg);
+    line-height: unset;
+}
+.navbar {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-content: center !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
+}
+.dropdown-menu {
+    left: 0 !important;
+    right: unset !important;
+}
+@media (min-width:767px) {
+    .menu-inner{
+        flex-direction: row-reverse !important;
+    }
+}
+@media (max-width:767px) {
+    .map-quote-area .inner-content {
+        flex-direction: column;
+    }
+    .quote-form .selectmenu{
+        width: 100%;
+    }
+}
+.about-text-holder {
+    text-align: end;
+}
+.footer {
+    direction: rtl;
+}
+.single_footer {
+    text-align: start;
+}
+.social_profile ul {
+    display: flex;
+}
+.single_footer_address > *{
+    width: fit-content;
+    padding-right: 25px !important;
+}

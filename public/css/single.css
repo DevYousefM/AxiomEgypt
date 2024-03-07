@@ -1,0 +1,120 @@
+.site-cover {
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+.site-cover > .container {
+    position: relative;
+    z-index: 2;
+}
+.site-cover.overlay:before {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.site-cover .post-meta {
+    color: #fff;
+}
+.site-cover,
+.site-cover .same-height {
+    padding: 3em 0;
+}
+.site-cover.single-page h1,
+.site-cover.single-page .h1 {
+    color: #fff;
+    font-size: clamp(2rem, 3vw, 5rem);
+}
+.post-content-body {
+    font-weight: 400;
+    font-size: 17px;
+    overflow-x: hidden;
+    color: #848d92;
+}
+.blog-cards {
+    flex-direction: column !important;
+}
+.blog-card {
+    display: flex;
+}
+.blog-card .img-holder img {
+    width: 100%;
+    height: 100%;
+}
+.section {
+    padding: 4rem;
+}
+.blog-card .img-holder {
+    width: 100%;
+}
+.blog-card .statics-content {
+    padding: 15px 15px;
+}
+
+.more-blogs {
+    flex-direction: row !important;
+}
+.more-blogs .blog-card {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+.more-blogs .blog-card .img-holder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    z-index: 1;
+}
+.more-blogs .blog-card .img-holder img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+.more-blogs .blog-card .statics-content {
+    position: relative;
+    display: block;
+    z-index: 10;
+    padding: 20px;
+    box-shadow: 0px 3px 7px 1px rgba(240, 240, 240, 0.7);
+    background: #ffffff;
+}
+.more-blogs .blog-card .text-holder {
+    position: relative;
+    display: block;
+    background: #ffffff;
+}
+.more-blogs .blog-card .text-holder .text {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+}
+.more-blogs .blog-card .text-holder .text:before {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 3px;
+    height: 50px;
+    background: var(--flame);
+    content: "";
+    z-index: 99;
+}
+.more-blogs .blog-card .text-holder .text h3 {
+    color: var(--dark-blue);
+    margin: 0 0 15px;
+}
+.more-blogs .blog-card .text-holder .text p {
+    margin: 0;
+}
+.more-blogs .blog-card .readmore {
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.more-blogs .blog-card .readmore:hover {
+    margin-left: 25px;
+}
