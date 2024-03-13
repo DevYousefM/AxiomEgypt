@@ -225,6 +225,7 @@ return [
     ],
     'copyright' => 'Copyright © 2022 Axiom-Egypt'
   ],
+  'axiom' => 'Axiom Egypt',
   "search" => "Search",
   "emptyTable" => "It's empty here",
   "infoS" => "Showing",

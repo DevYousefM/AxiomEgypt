@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('title')
+    @lang('site.axiom')
+@endsection
 @section('content')
     <!--Main Slider-->
     <!-- start of hero -->
