@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.pingmuse.com
-        username: axiom@axiomeg.com
+        username: pingmuse_axiomdemo@demo.axiomeg.com
         password: ${{ secrets.ftp_password }}
