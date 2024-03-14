@@ -40,7 +40,7 @@
                                         </div>
                                     </div>
                                     <div class="readmore mb-0">
-                                        <a class="btn-two" href="{{ route('article.show', $t->slug) }}"><span
+                                        <a class="btn-two" href="{{ route('article.show', ['slug'=>$t->slug,'service_slug'=>$service->slug]) }}"><span
                                                 class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
                                     </div>
                                 </div>

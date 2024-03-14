@@ -18,7 +18,7 @@ Route::group(
 
         Route::get('/services', [FrontController::class, "services"])->name("services");
         Route::get('/service/{slug}', [FrontController::class, "service"])->name("services.show");
-        Route::get('/service/article/{slug}', [FrontController::class, "article"])->name("article.show");
+        Route::get('/service/{service_slug}/{slug}', [FrontController::class, "article"])->name("article.show");
     }
 );
 Route::get('/clear-cache', function () {
