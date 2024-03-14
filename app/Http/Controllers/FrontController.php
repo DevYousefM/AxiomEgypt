@@ -38,7 +38,7 @@ class FrontController extends Controller
             ->first();
         return view('service', ["service" => $service]);
     }
-    public function article($slug)
+    public function article($_,$slug)
     {
         return $slug;
         $article = CategoryArticle::whereTranslation('slug', $slug)
