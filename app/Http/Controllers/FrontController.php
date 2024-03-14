@@ -40,6 +40,7 @@ class FrontController extends Controller
     }
     public function article($slug)
     {
+        return $slug;
         $article = CategoryArticle::whereTranslation('slug', $slug)
             ->whereTranslation('locale', app()->getLocale())
             ->first();
