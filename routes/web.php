@@ -21,8 +21,4 @@ Route::group(
         Route::get('/service/{service_slug}/{slug}', [FrontController::class, "article"])->name("article.show");
     }
 );
-Route::get('/clear-cache', function () {
-    // $exitCode = Artisan::call('cache:clear');
-    return 'what you want';
-});
 require __DIR__ . '/auth.php';

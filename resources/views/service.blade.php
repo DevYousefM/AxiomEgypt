@@ -27,23 +27,26 @@
                         @if ($t->locale == app()->getLocale())
                             <div class="blog-card col-xl-3 col-lg-4 col-md-6 col-sm-6">
 
-                                <div class="img-holder">
-                                    <img src="{{ asset('uploads/' . $item->image) }}" alt="{{ $t->seo_title }}">
-                                </div>
-                                <div class="statics-content">
-                                    <div class="text-holder">
-                                        <div class="text">
-                                            <h3 class="mb-2">{{ $t->title }}</h3>
-                                            <p class="text-limit">
-                                                {{ $t->short_content }}
-                                            </p>
+                                <a href="{{ route('article.show', ['slug' => $t->slug, 'service_slug' => $service->slug]) }}">
+                                    <div class="img-holder">
+                                        <img src="{{ asset('uploads/' . $item->image) }}" alt="{{ $t->seo_title }}">
+                                    </div>
+                                    <div class="statics-content">
+                                        <div class="text-holder">
+                                            <div class="text">
+                                                <h3 class="mb-2">{{ $t->title }}</h3>
+                                                <p class="text-limit">
+                                                    {{ $t->short_content }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="readmore mb-0">
+                                            <a class="btn-two"
+                                                href="{{ route('article.show', ['slug' => $t->slug, 'service_slug' => $service->slug]) }}"><span
+                                                    class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
                                         </div>
                                     </div>
-                                    <div class="readmore mb-0">
-                                        <a class="btn-two" href="{{ route('article.show', ['slug'=>$t->slug,'service_slug'=>$service->slug]) }}"><span
-                                                class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         @endif
                     @endforeach
