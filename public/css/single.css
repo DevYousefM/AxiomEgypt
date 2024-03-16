@@ -48,6 +48,16 @@
 .section {
     padding: 4rem 10rem;
 }
+@media (max-width: 768px) {
+    .section {
+        padding: 2rem 1.5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .section {
+        padding: 2rem 3rem;
+    }
+}
 .blog-card .img-holder {
     width: 100%;
 }
