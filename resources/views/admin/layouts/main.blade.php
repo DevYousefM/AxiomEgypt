@@ -37,9 +37,6 @@
             @yield('content')
         </div>
         <!-- /.content-wrapper -->
-
-        <!-- Main Footer -->
-        @include('admin.includes.footer')
     </div>
     <!-- ./wrapper -->
 
