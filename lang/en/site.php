@@ -26,7 +26,7 @@ return [
   ],
   "call_to_action" => [
     "card_one" => [
-      'h3' => 'Maintainance Services',
+      'h3' => 'Maintenance Services',
       'p' => "Axiom set the bar high for other petroleum services' competitors as we
       provide Preventive, Predictive, and Corrective Maintenance for all
       disciplines.",
@@ -46,7 +46,7 @@ return [
   ],
   'know_more' => 'Know more',
   'services' => [
-    'title' => 'Markert We Serve',
+    'title' => 'Market We Serve',
     'solution' => 'Solutions',
     'take_a_look' => 'Take A Look',
     'p' => 'As a comprehensive and trustworthy company, we
@@ -77,7 +77,7 @@ return [
         drilling and piping tools required for your project.'
       ],
       'slide_four' => [
-        'h3' => 'Maintainance Services',
+        'h3' => 'Maintenance Services',
         'p' => "Axiom set the bar high for other petroleum services' competitors as we
         provide Preventive, Predictive, and Corrective Maintenance for all
         disciplines.",
@@ -108,7 +108,7 @@ return [
   'blogs' => [
     'title' => 'Blog',
     'our_blogs' => 'Our Articles',
-    'p' => 'There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain',
+    'p' => "Stay updated on the latest trends and insights in petroleum services. Explore industry news,analyses and expert opinions to fuel your knowledge and stay ahead in the energy sector. Let's journey together!",
   ],
   'why_choose_us' => [
     'title' => 'Why choose us',
@@ -121,7 +121,7 @@ return [
     'feature_one' => [
       'title' => 'Punctual Delivery Time',
       'p' => 'is foundational to how we run our business. We
-      use consistent standards, practices and behaviours to always
+      use consistent standards, practices and behaviors to always
       improve our performance as we aspire to do the right thing'
     ],
     'feature_two' => [
@@ -135,7 +135,7 @@ return [
       our clients and partners all the way.'
     ],
     'feature_four' => [
-      'title' => 'Easy & Affortable',
+      'title' => 'Easy & Affordable',
       'p' => 'All you need is just one click to start a whole stress-free
       journey where you have the right team at the right time and the
       right place.'
