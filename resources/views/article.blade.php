@@ -52,7 +52,7 @@
         <div class="container">
             <div class="more-blogs">
                 @foreach ($anotherArticles as $item)
-                    {{ $item->translations }}
+                    {{ $item->translations[0] }}
                     <br>
                     {{-- <div class="blog-card col-xl-3 col-lg-4 col-md-6 col-sm-6 h-100">
                         <div class="img-holder">
