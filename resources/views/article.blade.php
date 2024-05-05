@@ -52,9 +52,7 @@
         <div class="container">
             <div class="more-blogs">
                 @foreach ($anotherArticles as $item)
-                    {{ $item->translations[0] }}
-                    <br>
-                    {{-- <div class="blog-card col-xl-3 col-lg-4 col-md-6 col-sm-6 h-100">
+                    <div class="blog-card col-xl-3 col-lg-4 col-md-6 col-sm-6 h-100">
                         <div class="img-holder">
                             <img src="{{ asset('uploads/' . $item->image) }}" alt="{{ $item->translations[0]->seo_title }}">
                         </div>
@@ -68,11 +66,12 @@
                                 </div>
                             </div>
                             <div class="readmore mb-0">
-                                <a class="btn-two" href="{{ route('article.show', $item->translations[0]->slug) }}"><span
-                                        class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
+                                {{$item->translations[0]->slug}}
+                                {{-- <a class="btn-two" href="{{ route('article.show', $item->translations[0]->slug) }}"><span
+                                        class="icon-arrow"></span><span>@lang('site.know_more')</span></a> --}}
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
                 @endforeach
             </div>
         </div>
