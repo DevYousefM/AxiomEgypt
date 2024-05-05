@@ -66,8 +66,10 @@
                                 </div>
                             </div>
                             <div class="readmore mb-0">
-                                <a class="btn-two" href='{{ route('article.show', $item->translations[0]->slug) }}'><span
-                                        class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
+                                {{-- <a class="btn-two" href='{{ route('article.show', $item->translations[0]->slug) }}'><span
+                                        class="icon-arrow"></span><span>@lang('site.know_more')</span></a> --}}
+
+                                {{ $item->translations[0]->slug }}
                             </div>
                         </div>
                     </div>
