@@ -38,12 +38,12 @@ class FrontController extends Controller
             ->first();
         return view('service', ["service" => $service]);
     }
-    public function article($_,$slug)
+    public function article($service_slug, $slug)
     {
         $article = CategoryArticle::whereTranslation('slug', $slug)
             ->whereTranslation('locale', app()->getLocale())
             ->first();
         $anotherArticles = CategoryArticle::where('id', '!=', $article->id)->where('category_id', $article->category->id)->withTranslation('locale', app()->getLocale())->latest()->take(3)->get();
-        return view('article', ["article" => $article, 'anotherArticles' => $anotherArticles]);
+        return view('article', ["article" => $article, 'anotherArticles' => $anotherArticles, 'service_slug' => $service_slug]);
     }
 }
