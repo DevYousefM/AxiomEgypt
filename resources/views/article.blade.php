@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="readmore mb-0">
-                                {{ $article->category->translation() }}
+                                {{ $article->category->translation->slug }}
                                 <a class="btn-two"
                                     href="{{ route('article.show', ['slug' => $item->translations[0]->slug, 'service_slug' => $service_slug]) }}"><span
                                         class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
