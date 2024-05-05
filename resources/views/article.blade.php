@@ -53,7 +53,8 @@
             <div class="more-blogs">
                 @foreach ($anotherArticles as $item)
                     {{ $item->translations }}
-                    <div class="blog-card col-xl-3 col-lg-4 col-md-6 col-sm-6 h-100">
+                    <br>
+                    {{-- <div class="blog-card col-xl-3 col-lg-4 col-md-6 col-sm-6 h-100">
                         <div class="img-holder">
                             <img src="{{ asset('uploads/' . $item->image) }}" alt="{{ $item->translations[0]->seo_title }}">
                         </div>
@@ -71,7 +72,7 @@
                                         class="icon-arrow"></span><span>@lang('site.know_more')</span></a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 @endforeach
             </div>
         </div>
